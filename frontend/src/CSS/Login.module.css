@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+
+.LogInPage {
+    background: linear-gradient(120deg, #3C3176, #3520a2, #11054d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+header {
+    position: absolute;
+    right: 38cm;
+    top: 0.6cm;
+}
+
+.logo {
+    border-radius: 50%;
+    height: 2cm;
+    width: 2cm;
+}
+
+.logged {
+    width: 60%;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.Form {
+    background-color: white;
+    border-radius: 15px;
+    padding: 50px;
+    width: 65%;
+}
+
+.imgg {
+    width: 30%;
+}
+
+.heading {
+    font-family: 'Lemon', cursive;
+    color: black;
+    text-align: center;
+    font-size: 3em;
+}
+
+.logInImg {
+    position: relative;
+    top: 4cm;
+    left: -2cm;
+}
+
+.warning {
+    color: black;
+    font-size: 1.2em;
+    font-family: 'Lemon';
+    font-weight: 500;
+}
+
+.sign {
+    color: black;
+    text-decoration: none;
+}
+
+.sign:hover {
+    color: aqua;
+}
+
+.form {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    margin-top: 6px;
+    color: black;
+    font-family: 'Chakra Petch';
+    font-size: 1.5rem;
+    user-select: none;
+}
+
+.required::after {
+    content: "*";
+    color: red;
+}
+
+.input {
+    height: 2em;
+    width: 86%;
+    border-radius: 5px;
+    padding: 2px;
+    padding-left: 0.4cm;
+    border: 2px solid black;
+    margin-top: 6px;
+    outline: 0;
+    background-color: transparent;
+    color: black;
+    font-family: 'Chakra Petch';
+    font-size: 1.3rem;
+}
+
+.button {
+    cursor: pointer;
+    display: inline;
+    margin-top: 2em;
+    height: 1cm;
+    border-radius: 5px;
+    font-family: 'Black Ops One';
+    font-size: 1rem;
+    width: 91%;
+    background-color: aqua;
+    border: 2px solid aqua;
+}
+
+.button:hover {
+    background-color: #3C3176;
+    border: 2px solid #3C3176;
+    color: white;
+}
+
+.forget {
+    cursor: pointer;
+    display: inline;
+    margin-top: 2em;
+    height: 1cm;
+    border-radius: 5px;
+    font-family: 'Black Ops One';
+    font-size: 1rem;
+    width: 91%;
+    background-color: white;
+    border: 2px solid aqua;
+}
+
+.forget:hover {
+    background-color: #3C3176;
+    border: 2px solid #3C3176;
+    color: white;
+}

@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Mochiy+Pop+One&display=swap');
+
+* {
+    margin: 0;
+}
+
+.navbar {
+    height: 80px;
+}
+
+.menu {
+    display: flex;
+    float: right;
+    margin-right: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.s {
+    text-decoration: none;
+    line-height: 80px;
+    margin: 0 5px;
+    color: white;
+    font-size: 17px;
+    padding-right: 13px;
+    padding-left: 13px;
+    border-radius: 3px;
+}
+
+.g {
+    text-decoration: none;
+    line-height: 80px;
+    margin: 0 5px;
+    color: white;
+    font-size: 17px;
+    padding-right: 13px;
+    padding-left: 13px;
+    background-color: #4F6EF7;
+    border-radius: 5px;
+}
+
+.profile {
+    text-decoration: none;
+    line-height: 80px;
+    margin: 0 5px;
+    color: white;
+    font-size: 17px;
+    padding-right: 13px;
+    padding-left: 13px;
+    border-radius: 5px;
+}
+
+.s:hover {
+    background-color: #1b9bff;
+    transition: .5s;
+}
+
+.profile:hover {
+    background-color: #1b9bff;
+    transition: .5s;
+}
+
+.checkbtn {
+    line-height: 80px;
+    float: right;
+    font-size: 30px;
+    color: white;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.btn {
+    font-family: 'Handjet';
+    margin-right: 10px;
+    font-size: 1.5rem;
+    margin-top: 25px;
+    text-decoration: none;
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+}
+
+.btn::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.btn::before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.btn:hover::before {
+    opacity: 1;
+}
+
+#ham {
+    color: white;
+    font-size: 30px;
+}
+
+#check {
+    display: none;
+}
+
+.logo {
+    margin-left: 3cm;
+    height: 6em;
+    width: 6em;
+}
+
+.Profile {
+    color: white;
+    text-decoration: none;
+}
+
+/* --------------------------------Responsivness---------------------------------- */
+
+@media (max-width: 952px) {
+    .s {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: 100%;
+        transition: all .5s;
+        text-align: center;
+        z-index: 9999;
+    }
+
+    .s {
+        font-size: 20px;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .s:hover {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked~.menu {
+        left: 0;
+    }
+
+    #check:checked~body {
+        overflow: hidden;
+    }
+
+    .logo {
+        margin-left: 10px;
+    }
+}

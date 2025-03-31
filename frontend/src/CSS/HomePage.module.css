@@ -1,0 +1,9 @@
+.homePage {
+    background: black;
+    min-height: 100vh;
+}
+
+.title {
+    color: white;
+    font-size: 5rem;
+}
