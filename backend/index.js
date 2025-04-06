@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import userRoutes from "./Routes/userRoutes.js";
-
+import aiRoutes from "./Routes/aiRoutes.js";
 dotenv.config({
   path: "./.env",
 });
@@ -26,6 +26,7 @@ app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 app.use(cookieParser());
 
 app.use("/", userRoutes);
+app.use("/api/getDet", aiRoutes);
 
 mongoose
   .connect(process.env.MONGODB_URI)

@@ -3,6 +3,9 @@ const router = express.Router();
 import UserData from "../Models/UserModels.js";
 import jwt from 'jsonwebtoken'
 
+
+
+
 const secretCode = process.env.SECRET_CODE
 
 router.post("/api", async (req, res) => {
@@ -56,5 +59,7 @@ router.post("/login", async (req, res) => {
       .json({ status: false, message: "User does not exist" });
   }
 });
+
+
 
 export default router;

@@ -1,16 +1,16 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
   "type": "module",
+  "main": "index.js",
   "scripts": {
     "start": "nodemon -r dotenv/config --experimental-json-modules index.js"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
+    "@google/generative-ai": "^0.24.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",

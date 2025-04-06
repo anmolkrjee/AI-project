@@ -12,17 +12,17 @@ export const TeamMember = [
     },
     {
         id: 2,
-        name: "Anish Kumar",
-        pnumber: 'anishraj277',
-        email: 'anishkumarraj277@gmail.com',
+        name: "Suraj Kumar",
+        pnumber: 'SurajKumar-05',
+        email: 'surajgupta11.skg@gmail.com',
         imgSrc: TeamMemberr,
-        role: "Team Member"
+        role: 'Team Co-Leader'
     },
     {
         id: 3,
-        name: "Suraj Kumar",
-        pnumber: '',
-        email: 'surajgupta11.skg@gmail.com',
+        name: "Anish Kumar",
+        pnumber: 'Anishraj277',
+        email: 'anishkumarraj277@gmail.com',
         imgSrc: TeamMemberr,
         role: 'Team Member'
     },
